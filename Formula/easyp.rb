@@ -5,12 +5,12 @@
 class Easyp < Formula
   desc "Easy modern protobuf tooling for all your needs."
   homepage "https://easyp.tech"
-  version "0.7.11-rc1"
+  version "0.7.11"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/easyp-tech/easyp/releases/download/v0.7.11-rc1/easyp-0.7.11-rc1-darwin-amd64.tar.gz"
-      sha256 "5c155bcf51b7c65f1d35fae005675e782794ee9fe6d61f2de965d186972b9398"
+      url "https://github.com/easyp-tech/easyp/releases/download/v0.7.11/easyp-0.7.11-darwin-amd64.tar.gz"
+      sha256 "258149a513c839247d74b23f7694af9861bac43743ef4e31fded3927435ca271"
 
       def install
         bin.install "easyp"
@@ -22,8 +22,8 @@ class Easyp < Formula
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/easyp-tech/easyp/releases/download/v0.7.11-rc1/easyp-0.7.11-rc1-darwin-arm64.tar.gz"
-      sha256 "274b325fa7f400f3535cfbd3f08a9e1c3dfa41aa35ce3ddafdbcd12128fece41"
+      url "https://github.com/easyp-tech/easyp/releases/download/v0.7.11/easyp-0.7.11-darwin-arm64.tar.gz"
+      sha256 "1962c0cb90c860a79a7004bade5abb6f7f5fc2e8b3e2a046fae43fda8b6dec8b"
 
       def install
         bin.install "easyp"
@@ -39,8 +39,8 @@ class Easyp < Formula
   on_linux do
     if Hardware::CPU.intel?
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/easyp-tech/easyp/releases/download/v0.7.11-rc1/easyp-0.7.11-rc1-linux-amd64.tar.gz"
-        sha256 "47fc22eebc06384b0d58eea705420fc92a68a08eabe469a1f942af0ae62d449c"
+        url "https://github.com/easyp-tech/easyp/releases/download/v0.7.11/easyp-0.7.11-linux-amd64.tar.gz"
+        sha256 "f89665389eb4aa1c96b130ec5a1bafbd5ee23a421a2ee5d8b5a666b3d5edf0e5"
 
         def install
           bin.install "easyp"
@@ -54,8 +54,8 @@ class Easyp < Formula
     end
     if Hardware::CPU.arm?
       if !Hardware::CPU.is_64_bit?
-        url "https://github.com/easyp-tech/easyp/releases/download/v0.7.11-rc1/easyp-0.7.11-rc1-linux-armv6.tar.gz"
-        sha256 "4be058b2c288b5fcab6c6c99d2f22a458b7a5e8e50ac5bad5bddd7f62c7c1acd"
+        url "https://github.com/easyp-tech/easyp/releases/download/v0.7.11/easyp-0.7.11-linux-armv6.tar.gz"
+        sha256 "5fa5c07cc79294b69235d1fffda04f4463909ef258431d76f498c0f5fc2f17d3"
 
         def install
           bin.install "easyp"
@@ -69,8 +69,8 @@ class Easyp < Formula
     end
     if Hardware::CPU.arm?
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/easyp-tech/easyp/releases/download/v0.7.11-rc1/easyp-0.7.11-rc1-linux-arm64.tar.gz"
-        sha256 "afcb0fad70adb9b4e17f543d21bcdab18e530ffd06a48098847a5b40a27f3bed"
+        url "https://github.com/easyp-tech/easyp/releases/download/v0.7.11/easyp-0.7.11-linux-arm64.tar.gz"
+        sha256 "b41cc3487c777f0b3e3cc5e3b240fbf42d637353eb09818518321f35cc4d81d8"
 
         def install
           bin.install "easyp"
