@@ -10,7 +10,7 @@ class Easyp < Formula
   on_macos do
     if Hardware::CPU.intel?
       url "https://github.com/easyp-tech/easyp/releases/download/v0.11.3/easyp-0.11.3-darwin-amd64.tar.gz"
-      sha256 "92095d266fe2ed4b3d558554ab513f981b3f4677522af2b09fe77b1001907fe6"
+      sha256 "50c6bde55408dd5e089677be22c508a14783ae889f036676a6207f377413fe1a"
 
       def install
         bin.install "easyp"
@@ -23,7 +23,7 @@ class Easyp < Formula
     end
     if Hardware::CPU.arm?
       url "https://github.com/easyp-tech/easyp/releases/download/v0.11.3/easyp-0.11.3-darwin-arm64.tar.gz"
-      sha256 "a5c8b763c1adf292b261f495dd7212f4e24e1a7d4b00b7d9d6fc2fd0138f05f8"
+      sha256 "4c0addb8151f38911ad54a2cd1d8f3a2cd53e700dcfac98f96db7957aa5e762b"
 
       def install
         bin.install "easyp"
@@ -39,7 +39,7 @@ class Easyp < Formula
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
       url "https://github.com/easyp-tech/easyp/releases/download/v0.11.3/easyp-0.11.3-linux-amd64.tar.gz"
-      sha256 "b1768d05eecfa14fd84aa27666d0c72a7f207f58551aea734f9480fe66fae2c6"
+      sha256 "2cc0ad57594be02ea4aebbdba58b99fcdcdad9bb09656fdda2ac71c109800504"
       def install
         bin.install "easyp"
         output = Utils.popen_read("#{bin}/easyp completion bash")
@@ -51,7 +51,7 @@ class Easyp < Formula
     end
     if Hardware::CPU.arm? && !Hardware::CPU.is_64_bit?
       url "https://github.com/easyp-tech/easyp/releases/download/v0.11.3/easyp-0.11.3-linux-armv6.tar.gz"
-      sha256 "902998468df4005387a96d56ecb05ad8a2192fcadbd255ea50fc6887347304ad"
+      sha256 "71c2ab223e72f80c7fff337881113a8e283c9b36a8540a3a27eb7148783d65ec"
       def install
         bin.install "easyp"
         output = Utils.popen_read("#{bin}/easyp completion bash")
@@ -63,7 +63,7 @@ class Easyp < Formula
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
       url "https://github.com/easyp-tech/easyp/releases/download/v0.11.3/easyp-0.11.3-linux-arm64.tar.gz"
-      sha256 "f5423a249f4049c82c3c6b0e29da0e81edc461991e3a8ba1dd7383e01885ff3f"
+      sha256 "689629b2a4fe6f6547f3e622a9160bfab821effdfe86afd5a903db4343b62ebb"
       def install
         bin.install "easyp"
         output = Utils.popen_read("#{bin}/easyp completion bash")
